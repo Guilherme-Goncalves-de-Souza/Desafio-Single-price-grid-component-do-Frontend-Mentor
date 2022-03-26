@@ -26,4 +26,4 @@ Desktop design:            |  Mobile design:
 
 <br>
 
-<a href = ""> Veja o projeto aqui. </a>
+<a href = "https://guilherme-goncalves-de-souza.github.io/Desafio-Single-price-grid-component-do-Frontend-Mentor/"> Veja o projeto aqui. </a>
