@@ -1,10 +1,10 @@
 # Single price grid component
 
 +1 projeto feito sozinho.
-- Projeto feito para praticar meus conhecimentos da propriedade Grid do css.
+- Projeto feito para praticar meus conhecimentos sobre a propriedade Grid do css.
 ---------
 - Projeto feito utilizando o conceito de Mobile first.
-- Utilizando também a propriedade Grid do css
+- Utilizando também a propriedade Grid do css.
 
 --------
 Esse desafio foi proposto no site do Frontend Mentor.
