@@ -1,0 +1,252 @@
+/* 
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+- Cyan: hsl(179, 62%, 43%)
+- Bright Yellow: hsl(71, 73%, 54%)
+
+- Light Gray: hsl(204, 43%, 93%)
+- Grayish Blue: hsl(218, 22%, 67%)
+
+
+- Font size: 16px
+
+- Family: [Karla](https://fonts.google.com/specimen/Karla)
+- Weights: 400, 700
+
+font-family: 'Karla', sans-serif;
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+  font-size: 13px;
+}
+
+/* header ================================= */
+
+header {
+  height: 37vh;
+
+  padding: 1.5rem;
+  padding-top: 1.5rem;
+}
+
+header h1 {
+  color: hsl(179, 62%, 43%);
+}
+
+header h2 {
+  color: hsl(71, 73%, 54%);
+  margin-top: 1rem;
+  width: 20rem;
+}
+
+header p {
+  color: hsl(218, 22%, 67%);
+
+  font-size: 16px;
+  width: 19.5rem;
+  line-height: 1.5rem;
+  margin-top: 1rem;
+}
+
+p {
+  color: hsl(204, 43%, 93%);
+}
+
+h1,
+h2 {
+  color: white;
+}
+
+/* main ================================= */
+
+main {
+  background-color: hsl(179, 62%, 43%);
+
+  height: 30vh;
+
+  padding: 1.5rem;
+}
+
+main h1 {
+  font-size: 20px;
+}
+
+main h2 {
+  font-size: 30px;
+
+  display: flex;
+  align-items: center;
+
+  margin-top: 1rem;
+}
+
+main h2 small {
+  color: hsl(179, 51%, 65%);
+  font-size: 15px;
+  margin-left: 15px;
+}
+
+main p {
+  font-size: 18px;
+  margin-top: 0.5rem;
+}
+
+main button {
+  background-color: hsl(71, 73%, 54%);
+  color: white;
+
+  border: none;
+  border-radius: 5px;
+
+  width: 19.5rem;
+  height: 2.5rem;
+
+  margin-top: 1rem;
+
+  cursor: pointer;
+}
+
+/* footer ================================= */
+
+footer {
+  background-color: hsl(179, 45%, 55%);
+  height: 33vh;
+
+  padding: 1.5rem;
+}
+
+footer h1 {
+  font-size: 20px;
+
+  padding-bottom: 7px;
+}
+
+footer p {
+  margin-top: 3.5px;
+}
+
+/* media 1 ================================= */
+
+@media (min-width: 769px) {
+  body {
+    display: grid;
+    grid-template-areas:
+      'header header'
+      'main footer';
+
+    grid-template-columns: 50vw;
+    grid-template-rows: 50vh;
+
+    font-size: 20px;
+  }
+
+  header {
+    grid-area: header;
+    padding: 5rem;
+  }
+
+  header h2 {
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  header p {
+    margin-top: 2rem;
+
+    font-size: 1.8rem;
+    width: 60rem;
+    line-height: 1.5em;
+  }
+
+  main {
+    grid-area: main;
+    height: 50vh;
+
+    padding: 5rem;
+  }
+
+  main h1 {
+    font-size: 1.8rem;
+  }
+
+  main h2 {
+    font-size: 3rem;
+
+    margin-top: 2rem;
+  }
+
+  main h2 small {
+    font-size: 1.5rem;
+  }
+
+  main p {
+    font-size: 1.5rem;
+
+    margin-top: 1rem;
+  }
+
+  main button {
+    font-size: 1.5rem;
+
+    width: 100%;
+    height: 4rem;
+
+    margin-top: 2rem;
+  }
+
+  footer {
+    grid-area: footer;
+    height: 50vh;
+
+    padding: 5rem;
+  }
+
+  footer h1 {
+    font-size: 1.8rem;
+  }
+
+  footer p {
+    margin-top: 0.7rem;
+  }
+}
+
+/* media 2 ================================= */
+
+@media (max-height: 625px) {
+  * {
+    font-size: 15px;
+  }
+
+  header {
+    padding: 1rem;
+  }
+
+  header h1,
+  header h2 {
+    font-size: 1.7rem;
+  }
+
+  header p {
+    width: 70%;
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  footer {
+    padding: 1rem;
+  }
+}
