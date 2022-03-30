@@ -1,0 +1,339 @@
+/* 
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+- Cyan: hsl(179, 62%, 43%)
+- Bright Yellow: hsl(71, 73%, 54%)
+
+- Light Gray: hsl(204, 43%, 93%)
+- Grayish Blue: hsl(218, 22%, 67%)
+
+
+- Font size: 16px
+
+- Family: [Karla](https://fonts.google.com/specimen/Karla)
+- Weights: 400, 700
+
+font-family: 'Karla', sans-serif;
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(204, 43%, 93%);
+
+  font-size: 16px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+  width: 100vw;
+
+  font-family: 'Karla', sans-serif;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  width: 18.5rem;
+}
+
+p {
+  font-size: 0.8rem;
+}
+
+/* ====================== HEADER  */
+
+.content header {
+  background-color: white;
+
+  padding: 1.5rem;
+  padding-top: 1rem;
+
+  min-width: 18.5rem;
+
+  border-radius: 10px 10px 0 0;
+}
+
+.content header h1 {
+  color: hsl(179, 62%, 43%);
+
+  font-size: 1.3rem;
+}
+
+.content header h2 {
+  color: hsl(71, 73%, 54%);
+
+  margin-top: 1rem;
+
+  font-size: 0.9rem;
+}
+
+.content header p {
+  color: hsl(218, 22%, 67%);
+
+  line-height: 1.5rem;
+  margin-top: 1rem;
+}
+
+/* ====================== MAIN  */
+
+h1,
+h2,
+p {
+  color: white;
+}
+
+.content main {
+  background-color: hsl(179, 61%, 43%);
+
+  padding: 1.5rem;
+  padding-top: 1.5rem;
+
+  min-width: 18.5rem;
+}
+
+.content main h1 {
+  font-size: 1.3rem;
+}
+
+.content main h2 {
+  font-size: 30px;
+
+  display: flex;
+  align-items: center;
+
+  margin-top: 0.6rem;
+}
+
+.content main h2 small {
+  color: hsl(179, 51%, 65%);
+  font-size: 15px;
+  margin-left: 15px;
+}
+
+.content main p {
+  margin-top: 0.3rem;
+}
+
+.content main button {
+  background-color: hsl(71, 73%, 54%);
+  color: white;
+
+  border: none;
+  border-radius: 5px;
+
+  width: 14.5rem;
+  height: 2.3rem;
+
+  margin-top: 1rem;
+
+  cursor: pointer;
+}
+
+/* ====================== FOOTER  */
+
+.content footer {
+  background-color: hsl(179, 47%, 51%);
+
+  padding: 1.5rem;
+  padding-top: 1.5rem;
+
+  min-width: 18.5rem;
+
+  border-radius: 0 0 10px 10px;
+}
+
+.content footer h1 {
+  font-size: 1.3rem;
+
+  padding-bottom: 7px;
+}
+
+.content footer p {
+  margin-top: 3.5px;
+
+  color: hsl(180, 60%, 71%);
+}
+
+/* ====================== MEDIA 1 */
+
+@media (min-width: 900px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100vh;
+  }
+
+  .content {
+    display: grid;
+    grid-template-areas:
+      'header header'
+      'main footer';
+  }
+
+  .content header {
+    grid-area: header;
+
+    padding: 2.5rem;
+    padding-top: 2.5rem;
+  }
+
+  .content header h1 {
+    font-size: 1.6rem;
+  }
+
+  .content header h2 {
+    font-size: 1.2rem;
+  }
+
+  .content header p {
+    font-size: 1.09rem;
+    width: 39rem;
+  }
+
+  /* MAIN */
+
+  .content main {
+    grid-area: main;
+
+    min-height: 18.5rem;
+    min-width: 22rem;
+
+    padding: 2.5rem;
+    padding-top: 2.5rem;
+
+    border-radius: 0 0 0 10px;
+  }
+
+  .content main h2 {
+    margin-top: 1rem;
+  }
+
+  .content main p {
+    margin-top: 0.5rem;
+    font-size: 0.95rem;
+  }
+
+  .content main button {
+    width: 17.5rem;
+    height: 3rem;
+
+    margin-top: 1.8rem;
+
+    box-shadow: 5px 5px 5px hsl(179, 48%, 43%);
+  }
+
+  /* FOOTER */
+
+  .content footer {
+    grid-area: footer;
+
+    padding: 2.5rem;
+    padding-top: 2.5rem;
+
+    min-height: 18.5rem;
+    min-width: 22rem;
+
+    border-radius: 0 0 10px 0;
+  }
+
+  .content footer p {
+    font-size: 0.9rem;
+    line-height: 14px;
+    margin-top: 0.5rem;
+  }
+}
+
+/* ====================== MEDIA 2 */
+
+@media (min-width: 1400px) {
+  .content header {
+    padding: 3rem;
+    padding-top: 3rem;
+  }
+
+  .content header h1 {
+    font-size: 2.05rem;
+  }
+
+  .content header h2 {
+    font-size: 1.52rem;
+  }
+
+  .content header p {
+    font-size: 1.4rem;
+    width: 50rem;
+  }
+
+  /* MAIN */
+
+  .content main {
+    min-height: 20rem;
+    min-width: 30rem;
+
+    padding: 3rem;
+    padding-top: 3rem;
+  }
+
+  .content main h1 {
+    font-size: 1.5rem;
+  }
+
+  .content main h2 {
+    font-size: 3rem;
+    margin-top: 1rem;
+  }
+
+  .content main h2 small {
+    font-size: 20px;
+  }
+
+  .content main p {
+    margin-top: 0.5rem;
+    font-size: 1.3rem;
+  }
+
+  .content main button {
+    font-size: 20px;
+
+    width: 25rem;
+    height: 4rem;
+
+    margin-top: 1.8rem;
+
+    box-shadow: 8px 8px 8px hsl(179, 48%, 43%);
+  }
+
+  /* FOOTER */
+
+  .content footer {
+    min-height: 20rem;
+    min-width: 30rem;
+
+    padding: 3rem;
+    padding-top: 3rem;
+  }
+
+  .content footer p {
+    font-size: 1.1rem;
+    line-height: 16px;
+    margin-top: 0.5rem;
+  }
+}
